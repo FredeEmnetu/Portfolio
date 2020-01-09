@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CalcCss.css">
+    <script type="text/javascript" src="Calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="image"></div>
+        <div class="container">
+            <form class="from1">
+                <input id="text"type="text">
+            </form>
+            <table id="button">
+                <tr>
+                    <td><input type="button" value="clr" onclick="clear()"></td>
+                    <td><input type="button" value="%" onclick="conversion()"></td>
+                    <td><input type="button" value="m+"></td>
+                    <td><input type="button" value="*"onclick="textarea(' * ')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="textarea(7)"></td>
+                    <td><input type="button" value="8" onclick="textarea(8)"></td>
+                    <td><input type="button" value="9" onclick="textarea(9)"></td>
+                    <td><input type="button" value="+" onclick="textarea(' + ')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="textarea(4)"></td>
+                    <td><input type="button" value="5" onclick="textarea(5)"></td>
+                    <td><input type="button" value="6" onclick="textarea(6)"></td>
+                    <td><input type="button" value="-" onclick="textarea(' - ')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="textarea(1)"></td>
+                    <td><input type="button" value="2" onclick="textarea(2)"></td>
+                    <td><input type="button" value="3" onclick="textarea(3)"></td>
+                    <td><input type="button" value="=" onclick="equal()"></td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+    
+</body> 
+</html>

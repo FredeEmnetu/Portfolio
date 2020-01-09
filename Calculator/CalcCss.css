@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: .4px red solid; */
+}
+:root{
+    font-size: 62.5%;
+}
+.main{
+    width: 100%;
+    height: 99.8vh;
+}
+.image{
+    width: 100%;
+    height:100%;
+    background-image: url("moountain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+}
+.container{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    border: .6px solid rgba(45, 47, 187, 0.829) ;
+    padding: 1rem;
+    z-index: 1;
+    /* display: none; */
+}
+form{
+    height: 15%;
+}
+.from1 input{
+ width: 100%;
+ height: 100%;
+}
+table{
+    width: 100%;
+    height: 85%;
+    text-align: center;
+}
+td input{
+    padding: 1em 2em;
+    border-radius: 1.15rem;
+}
