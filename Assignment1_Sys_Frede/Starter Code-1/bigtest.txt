@@ -1,0 +1,28 @@
+echo hello
+echo ----
+echo number of files containing main:
+ls -la | grep main | wc -l
+echo ----
+echo Adding file contents to file.txt:
+echo "my file contents" > file.txt
+echo Reading file.txt:
+cat file.txt
+echo Removing file.txt:
+rm file.txt
+echo ----
+echo Contents of fruits.txt:
+cat fruits.txt
+echo Filtering for "apple" in fruits.txt:
+grep apple < fruits.txt
+echo Filtering for "apple" and "orange" in fruits.txt:
+grep apple < fruits.txt | grep orange
+echo Previous command + reversing output:
+grep apple < fruits.txt | grep orange | rev
+echo Same command but with cat for input:
+cat fruits.txt | grep apple | grep orange > fruits_out.txt
+echo File should contain "apple orange":
+cat fruits_out.txt
+echo Removing fruits_out.txt
+rm fruits_out.txt
+echo ----
+echo Done!
